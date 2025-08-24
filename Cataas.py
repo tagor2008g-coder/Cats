@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter import ttk
+from tkinter import ttk # Набор улучшеных виджетов
 from PIL import Image, ImageTk
 import requests
 from io import BytesIO
@@ -50,7 +50,7 @@ file_menu.add_command(label="Выход", command=window.destroy)
 tag_label = Label(text="Выбери тег")
 tag_label.pack()
 
-tag_combobox = ttk.Combobox(values=ALLOWED_TAGS)
+tag_combobox = ttk.Combobox(values=ALLOWED_TAGS) #Разрешенные теги
 tag_combobox.pack()
 
 window.mainloop()
